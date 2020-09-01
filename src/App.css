@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: wheat;
+  color: darkblue;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  border-bottom : 2px solid chocolate;
+  color:darkblue;
+  display: inline-block;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn {
+  background-color: chocolate;
+  border: none;
+  border-radius: 5px;
   color: white;
+  font-size: 0.8rem;
+  padding : 15px 25px;
+  font-weight: 600;
+  
+}
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
 }
 
-.App-link {
-  color: #61dafb;
+.meal {
+  background-color: gold;
+  box-shadow: 0 10px 10px goldenrod;
+  border-radius: 5px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-container {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.img-container img {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+}
+
+.meal-detail {
+  position: relative;
+  padding: 30px;
+  flex:2;
+}
+.img-title {
+  color: black;
+  margin : 0 0 20px;
+}
+
+.meal-instructions {
+  font-size: 14px;
+
+}
+
+.meal-info {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-info li {
+  font-size: 14px;
+  padding: 5px;
+  font-weight: 300;
+  margin-right: 50px;
+}
+
+.meal-info li strong {
+  display: block;
+  font-size: 18px;
+
+}
+
+.meal-detail .btn {
+  position: absolute;
+  right: -10px;
+  bottom: -8px;
 }
